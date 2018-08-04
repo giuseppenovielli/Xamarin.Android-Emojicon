@@ -11,6 +11,7 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
  
      public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
           {
+          
         ....
            View fragmentView = inflater.Inflate(Resource.Layout.FragmentEmojicon, container, false);
            SetupEmojiconPopup(fragmentView);
@@ -19,12 +20,12 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
         ......
         
         return fragmentView;
-  }
+       }
  
   
     private SetupEmojiconPopup(View viewFragment)
     {
-     _emojiconPopup = new EmojiconsPopup(rootView, Activity);
+     _emojiconPopup = new EmojiconsPopup(viewFragment, Activity);
 
             _emojiconPopup.SetSizeForSoftKeyboard();
 
