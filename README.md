@@ -1,6 +1,9 @@
 # Xamarin.Android-Emojicon
 Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/emojicon by Giuseppe Novielli
 
+ Available NuGet https://www.nuget.org/packages/Xamarin.Android.Emojicon/
+
+
 # Usage EmojiconEditText
 
 # XML Layout Fragment EmojiconEditText
@@ -102,5 +105,3 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
             }
         }
         
-  # Available NuGet
-  https://www.nuget.org/packages/Xamarin.Android.Emojicon/
