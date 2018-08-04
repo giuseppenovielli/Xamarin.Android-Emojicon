@@ -2,6 +2,18 @@
 Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/emojicon by Giuseppe Novielli
 
 # Usage EmojiconEditText
+
+# XML Layout Fragment EmojiconEditText
+
+       <github.ankushsachdeva.emojicon.EmojiconEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/emojiEditText"
+                        android:hint="Write Text"
+                        emojicon:emojiconSize="27dp"
+                        android:minHeight="50dp"/>
+
 # In a Fragment but is similar into Activity
 
        ...
@@ -23,7 +35,7 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
        }
  
   
-    private SetupEmojiconPopup(View viewFragment)
+    private void SetupEmojiconPopup(View viewFragment)
     {
      _emojiconPopup = new EmojiconsPopup(viewFragment, Activity);
 
@@ -90,4 +102,5 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
             }
         }
         
-  
+  # Available NuGet
+  https://www.nuget.org/packages/Xamarin.Android.Emojicon/
