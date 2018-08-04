@@ -4,13 +4,13 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
 # Usage EmojiconEditText
 # In a Fragment but is similar into Activity
 
- ...
- private EmojiconPopup _emojiconPopup;
- private EmojiconEditText _emojiconEditText;
- private Button _emojiBtn;
+       ...
+     private EmojiconPopup _emojiconPopup;
+    private EmojiconEditText _emojiconEditText;
+    private Button _emojiBtn;
  
-  public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
+     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+          {
         ....
            View fragmentView = inflater.Inflate(Resource.Layout.FragmentEmojicon, container, false);
            SetupEmojiconPopup(fragmentView);
@@ -22,8 +22,8 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
   }
  
   
-  private SetupEmojiconPopup(View viewFragment)
-  {
+    private SetupEmojiconPopup(View viewFragment)
+    {
      _emojiconPopup = new EmojiconsPopup(rootView, Activity);
 
             _emojiconPopup.SetSizeForSoftKeyboard();
@@ -51,7 +51,7 @@ Xamarin.Android Binding of Emojicon library https://github.com/ankushsachdeva/em
                     _emojiconPopup.Dismiss();
                 }
             };
-  }
+        }
   
   
   
